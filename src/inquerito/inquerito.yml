@@ -1,0 +1,221 @@
+---
+questions:
+
+  # Questao 1
+  - type: matrix
+    name: q1
+    title: Geralmente...
+    isRequired: true
+    columns:
+      - value: 1
+        text: Não
+      - value: 2
+        text: Um pouco
+      - value: 3
+        text: Bastante
+      - value: 4
+        text: Muito
+    rows:
+      - value: q1_esforcos_violentos
+        text: Custa-lhe fazer esforços mais violentos, por exemplo, carregar um saco de
+          compras pesado ou uma mala?
+      - value: q1_distancia_pe
+        text: Custa-lhe percorrer uma grande distância a pé?
+      - value: q1_pequeno_passeio_pe
+        text: Custa-lhe dar um pequeno passeio a pé, fora de casa?
+      - value: q1_ficar_na_cama_ou_cadeira
+        text: Precisa de ficar na cama ou numa cadeira durante o dia?
+      - value: q1_ajuda_a_comer
+        text: Precisa que o ajudem a comer, a vestir-se, a lavar-se ou a ir à casa
+          de banho?
+
+  # Questao 2
+  - type: matrix
+    name: Q2
+    title: Durante a última semana...
+    isRequired: true
+    columns:
+      - value: 1
+        text: Não
+      - value: 2
+        text: Um pouco
+      - value: 3
+        text: Bastante
+      - value: 4
+        text: Muito
+    rows:
+      - value: q2_limitado_no_seu_emprego
+        text: Sentiu-se limitado no seu emprego ou no desempenho das suas atividades diárias?
+      - value: q2_limitado_lazer
+        text: Sentiu-se limitado na ocupação habitual dos seus tempos livres ou noutras atividades de lazer?
+      - value: q2_dispneia
+        text: Teve falta de ar?
+      - value: q2_dores
+        text: Teve dores?
+      - value: q2_dor_toracica
+        text: Tem tido dores no peito?
+      - value: q2_dor_braco_ombro
+        text: Tem tido dores no braço ou ombro?
+      - value: q2_outras_dores
+        text: Tem tido dores noutras partes do seu corpo?
+      - value: q2_dores_incapacidade
+        text: As dores perturbaram as suas atividades diárias?
+      - value: q2_descanso
+        text: Precisou de descansar?
+      - value: q2_dificuldade_em_dormir
+        text: Teve dificuldade em dormir?
+      - value: q2_fraqueza
+        text: Sentiu-se fraco?
+      - value: q2_falta__apetite
+        text: Teve falta de apetite?
+      - value: q2_nauseas
+        text: Teve enjoos?
+      - value: q2_vomitos
+        text: Vomitou?
+      - value: q2_bstipacao
+        text: Teve prisão de ventre?
+      - value: q2_diarreia
+        text: Teve diarreia?
+      - value: q2_astenia
+        text: Sentiu-se cansado?
+      - value: q2_dificuldade_concentracao
+        text: Teve dificuldade em concentrar-se, por exemplo,para ler o jornal ou ver televisão?
+      - value: q2_tenso
+        text: Sentiu-se tenso/a?
+      - value: q2_preocupado
+        text: Teve preocupações?
+      - value: q2_irritavel
+        text: Sentiu-se irritável?
+      - value: q2_deprimido
+        text: Sentiu-se deprimido?
+      - value: q2_dificuldade_memoria
+        text: Teve dificuldade em lembrar-se das coisas?
+      - value: q2_vida_familiar
+        text: O seu estado físico ou tratamento médico interferiram na sua vida familiar?
+      - value: q2_actividade_social
+        text: O seu estado físico ou tratamento médico interferiram na sua actividade social?
+      - value: q2_problemas_financeiros?
+        text: O seu estado físico ou tratamento médico causaram-lhe problemas de ordem financeira?
+      - value: q2_tosse
+        text: Tem tossido?
+      - value: q2_tosse_com_sangue
+        text: Tem tossido sangue?
+      - value: q2_tosse_seca
+        text: Tem tido tosse seca?
+      - value: q2_dispneia_em_repouso
+        text: Tem estado com falta de ar quando descansa?
+      - value: q2_dispneia_caminhar
+        text: Tem estado com falta de ar quando caminha?
+      - value: q2_dispneia_escadas
+        text: Tem estado com falta de ar quando sobe escadas?
+      - value: q2_boca_língua_dorida
+        text: Tem tido a boca ou a língua doridas?
+      - value: q2_problemas_deglutir
+        text: Tem tido problemas a engolir?
+      - value: q2_parestesias
+        text: Tem tido formigueiros nas mãos ou pés?
+      - value: q2_alopecia
+        text: Tem tido queda de cabelo?
+      - value: q2_alergia
+        text: Tem tido reações alérgicas?
+      - value: q2_dor_olhos
+        text: Tem tido ardência ou dores nos olhos?
+      - value: q2_tonturas
+        text: Tem tido tonturas?
+      - value: q2_unhas_estragadas
+        text: Tem tido as unhas das mãos ou dos pés estragadas?
+      - value: q2_problemas_pele
+        text: Tem tido problemas na pele (ex. comichão, pele seca)?
+      - value: q2_problemas_fala
+        text: Tem tido problemas a falar?
+      - value: q2_medo
+        text: Tem estado com medo que o tumor progrida?
+      - value: q2_cabelo_fino
+        text: Tem tido o seu cabelo mais fino ou sem vida devido à sua doença ou ao seu tratamento?
+      - value: q2_preocuapcao_saude
+        text: Tem estado preocupado sobre como estará a sua saúde no futuro?
+      - value: q2_diminucao_cap_fisicas
+        text: Tem sentido uma diminuição nas suas capacidades físicas?
+      - value: q2_perda_peso
+        text: A perda de peso tem sido para si um problema?
+
+  # Questao 3
+  - type: rating
+    name: q3_estado_geral
+    title: Como classificaria a sua saúde em geral durante a última semana?
+    isRequired: true
+    minRateDescription: Péssima
+    maxRateDescription: Ótima
+  
+  # Questao 4
+  - type: rating
+    name: q4_qualidade_vida
+    title: Como classificaria a sua qualidade de vida global durante a última semana?
+    isRequired: true
+    minRateDescription: Péssima
+    maxRateDescription: Ótima
+  
+  # Questao 5
+  - type: radiogroup
+    name: q5_mobilidade
+    title: MOBILIDADE
+    isRequired: true
+    colCount: 1
+    choices:
+      - Não tenho problemas em andar
+      - Tenho problemas ligeiros em andar
+      - Tenho problemas moderados em andar
+      - Tenho problemas graves em andar
+      - Sou incapaz de andar
+  
+  # Questao 6
+  - type: radiogroup
+    name: q6_cuidados_pessoais
+    title: CUIDADOS PESSOAIS
+    isRequired: true
+    colCount: 1
+    choices:
+      - Não tenho problemas em me lavar ou vestir
+      - Tenho problemas ligeiros em me lavar ou vestir
+      - Tenho problemas moderados em me lavar ou vestir
+      - Tenho problemas graves em me lavar ou vestir
+      - Sou incapaz de me lavar ou vestir sozinho/a
+  
+  # Questao 7
+  - type: radiogroup
+    name: q7_atividades_habituais
+    title: ATIVIDADES HABITUAIS (ex. trabalho, estudos, atividades domésticas,atividades em família ou de lazer)
+    isRequired: true
+    colCount: 1
+    choices:
+      - Não tenho problemas em desempenhar as minhas atividades habituais
+      - Tenho problemas ligeiros em desempenhar as minhas atividades habituais
+      - Tenho problemas moderados em desempenhar as minhas atividades habituais
+      - Tenho problemas graves em desempenhar as minhas atividades habituais
+      - Sou incapaz de desempenhar as minhas atividades habituais
+
+  # Questao 8
+  - type: radiogroup
+    name: q8_dor
+    title: DOR / MAL-ESTAR
+    isRequired: true
+    colCount: 1
+    choices:
+      - Não tenho dores ou mal-estar
+      - Tenho dores ou mal-estar ligeiros
+      - Tenho dores ou mal-estar moderados
+      - Tenho dores ou mal-estar graves
+      - Tenho dores ou mal-estar extremos
+  
+  # Questao 9
+  - type: radiogroup
+    name: q9_ansiedade_depressao
+    title: ANSIEDADE / DEPRESSÃO
+    isRequired: true
+    colCount: 1
+    choices:
+      - Não estou ansioso/a ou deprimido/a
+      - Estou ligeiramente ansioso/a ou deprimido/a
+      - Estou moderadamente ansioso/a ou deprimido/a
+      - Estou gravemente ansioso/a ou deprimido/a
+      - Estou extremamente ansioso/a ou deprimido/a

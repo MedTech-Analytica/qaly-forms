@@ -1,0 +1,9 @@
+{
+  "name": "magic-qaly",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "js-yaml": "^4.1.0",
+    "survey-jquery": "^1.8.65"
+  }
+}
