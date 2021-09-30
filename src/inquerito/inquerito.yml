@@ -8,7 +8,7 @@ pages:
 
     # Questao 1
     - type: matrix
-      name: q1
+      name: Q1
       title: Geralmente...
       #isRequired: true
       columns:
@@ -173,11 +173,16 @@ pages:
       #isRequired: true
       colCount: 1
       choices:
-        - Não tenho problemas em andar
-        - Tenho problemas ligeiros em andar
-        - Tenho problemas moderados em andar
-        - Tenho problemas graves em andar
-        - Sou incapaz de andar
+        - value: 5
+          text: Não tenho problemas em andar
+        - value: 4
+          text: Tenho problemas ligeiros em andar
+        - value: 3
+          text: Tenho problemas moderados em andar
+        - value: 2
+          text: Tenho problemas graves em andar
+        - value: 1
+          text: Sou incapaz de andar
     
     # Questao 6
     - type: radiogroup
@@ -186,11 +191,16 @@ pages:
       #isRequired: true
       colCount: 1
       choices:
-        - Não tenho problemas em me lavar ou vestir
-        - Tenho problemas ligeiros em me lavar ou vestir
-        - Tenho problemas moderados em me lavar ou vestir
-        - Tenho problemas graves em me lavar ou vestir
-        - Sou incapaz de me lavar ou vestir sozinho/a
+        - value: 5
+          text: Não tenho problemas em me lavar ou vestir
+        - value: 4
+          text: Tenho problemas ligeiros em me lavar ou vestir
+        - value: 3
+          text: Tenho problemas moderados em me lavar ou vestir
+        - value: 2
+          text: Tenho problemas graves em me lavar ou vestir
+        - value: 1
+          text: Sou incapaz de me lavar ou vestir sozinho/a
     
     # Questao 7
     - type: radiogroup
@@ -199,11 +209,16 @@ pages:
       #isRequired: true
       colCount: 1
       choices:
-        - Não tenho problemas em desempenhar as minhas atividades habituais
-        - Tenho problemas ligeiros em desempenhar as minhas atividades habituais
-        - Tenho problemas moderados em desempenhar as minhas atividades habituais
-        - Tenho problemas graves em desempenhar as minhas atividades habituais
-        - Sou incapaz de desempenhar as minhas atividades habituais
+        - value: 5
+          text: Não tenho problemas em desempenhar as minhas atividades habituais
+        - value: 4
+          text: Tenho problemas ligeiros em desempenhar as minhas atividades habituais
+        - value: 3
+          text: Tenho problemas moderados em desempenhar as minhas atividades habituais
+        - value: 2
+          text: Tenho problemas graves em desempenhar as minhas atividades habituais
+        - value: 1
+          text: Sou incapaz de desempenhar as minhas atividades habituais
   
     # Questao 8
     - type: radiogroup
@@ -212,11 +227,16 @@ pages:
       #isRequired: true
       colCount: 1
       choices:
-        - Não tenho dores ou mal-estar
-        - Tenho dores ou mal-estar ligeiros
-        - Tenho dores ou mal-estar moderados
-        - Tenho dores ou mal-estar graves
-        - Tenho dores ou mal-estar extremos
+        - value: 5
+          text: Não tenho dores ou mal-estar
+        - value: 4
+          text: Tenho dores ou mal-estar ligeiros
+        - value: 3
+          text: Tenho dores ou mal-estar moderados
+        - value: 2
+          text: Tenho dores ou mal-estar graves
+        - value: 1
+          text: Tenho dores ou mal-estar extremos
     
     # Questao 9
     - type: radiogroup
@@ -225,8 +245,13 @@ pages:
       #isRequired: true
       colCount: 1
       choices:
-        - Não estou ansioso/a ou deprimido/a
-        - Estou ligeiramente ansioso/a ou deprimido/a
-        - Estou moderadamente ansioso/a ou deprimido/a
-        - Estou gravemente ansioso/a ou deprimido/a
-        - Estou extremamente ansioso/a ou deprimido/a
+        - value: 5
+          text: Não estou ansioso/a ou deprimido/a
+        - value: 4
+          text: Estou ligeiramente ansioso/a ou deprimido/a
+        - value: 3
+          text: Estou moderadamente ansioso/a ou deprimido/a
+        - value: 2
+          text: Estou gravemente ansioso/a ou deprimido/a
+        - value: 1
+          text: Estou extremamente ansioso/a ou deprimido/a
