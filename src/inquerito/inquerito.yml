@@ -1,10 +1,14 @@
 ---
 title: Avalição da Qualidade de Vida - Cancro do Pulmão
 showProgressBar: top
+#progressBarType: buttons
 pages:
 
   # Página 1
-  - questions:
+  - name: pagina1 
+    navigationTitle: "titulo"
+    navigationDescription: "coiso e tal"
+    questions:
 
     # Questao 1
     - type: matrix
@@ -35,8 +39,12 @@ pages:
             de banho?
 
   # página 2
-  - questions:
-
+  - name: pagina2
+    navigationTitle: "outro titulo"
+    navigationDescription: "descricao e tal"
+    questions:
+    
+  
       # Questao 2
     - type: matrix
       name: Q2
@@ -148,7 +156,10 @@ pages:
           text: A perda de peso tem sido para si um problema?
 
   # página 3
-  - questions:
+  - name: pagina3
+    navigationTitle: "tit page 3"
+    navigationDescription: "descricao e tal"
+    questions:
      
     # Questao 3
     - type: rating
@@ -169,7 +180,7 @@ pages:
     # Questao 5
     - type: radiogroup
       name: q5_mobilidade
-      title: MOBILIDADE
+      title: Mobilidade
       #isRequired: true
       colCount: 1
       choices:
@@ -187,7 +198,7 @@ pages:
     # Questao 6
     - type: radiogroup
       name: q6_cuidados_pessoais
-      title: CUIDADOS PESSOAIS
+      title: Cuidados Pessoais
       #isRequired: true
       colCount: 1
       choices:
@@ -205,7 +216,8 @@ pages:
     # Questao 7
     - type: radiogroup
       name: q7_atividades_habituais
-      title: ATIVIDADES HABITUAIS (ex. trabalho, estudos, atividades domésticas,atividades em família ou de lazer)
+      title: Atividades Habituais
+      description: ex. trabalho, estudos, atividades domésticas, atividades em família ou de lazer
       #isRequired: true
       colCount: 1
       choices:
@@ -223,7 +235,7 @@ pages:
     # Questao 8
     - type: radiogroup
       name: q8_dor
-      title: DOR / MAL-ESTAR
+      title: Dor / Mal-estar
       #isRequired: true
       colCount: 1
       choices:
@@ -241,7 +253,7 @@ pages:
     # Questao 9
     - type: radiogroup
       name: q9_ansiedade_depressao
-      title: ANSIEDADE / DEPRESSÃO
+      title: Ansiedade / Depressão
       #isRequired: true
       colCount: 1
       choices:
@@ -255,3 +267,67 @@ pages:
           text: Estou gravemente ansioso/a ou deprimido/a
         - value: 1
           text: Estou extremamente ansioso/a ou deprimido/a
+
+  # página 4
+  - name: pagina4
+    navigationTitle: "titulo pag 4"
+    navigationDescription: "descricao e tal"
+
+    questions:
+      # Questao 10
+    - type: boolean
+      name: q10_fez_cirurgia_cancro_pulmao
+      title: Foi sujeito a uma cirurgia de cancro do pulmão?
+      isRequired: true
+      labelTrue: Sim
+      labelFalse: Não
+      hideNumber: true
+
+      # Questao 11
+    - type: matrix
+      name: q11_ansiedade_depressao
+      title: Cirurgia de Cancro do Pulmão
+      description: Por favor, responda às seguintes questões apenas no caso de ter sido sujeito a uma cirurgia de cancro do pulmão
+      #isRequired: true
+      visibleIf: "{q10_fez_cirurgia_cancro_pulmao} = true"
+      columns:
+        - value: 1
+          text: Não
+        - value: 2
+          text: Um pouco
+        - value: 3
+          text: Bastante
+        - value: 4
+          text: Muito
+      rows:
+        - value: q11_dores_na_area_cirurgia
+          text: Tem tido dores na área da cirurgia?
+        - value: q11_sensibilidade_ferida
+          text: A área da ferida ficou muito sensível?
+        - value: q11_limitacoes_desempenho
+          text: Tem estado com limitações do seu desempenho por causa da extensão da cirurgia?
+        - value: q11_dificuldade_usar_o_braco
+          text: Tem tido alguma dificuldade a usar o braço ou o ombro no lado da cirurgia torácica?
+        - value: q11_dor_interfere_com_atividades_diarias
+          text: A dor da sua cicatriz tem interferido com as suas atividades diárias?
+
+  # página 5
+  - name: pagina5
+    navigationTitle: "pag 5"
+    navigationDescription: "descricao e tal"
+    questions:
+      
+    - type: nouislider
+      name: q12_saude_hoje
+      title: Como está a sua saúde hoje?
+      description: A escala está marcada de 0 a 100, em que 10 signfica o MELHOR estado de saúde que pode imaginar e 0 o PIOR.
+      #isRequired: true
+      defaultValue: 50
+      rangeMax: 100
+      step: 1
+      pipsValues: [10, 20, 30 , 40, 50, 60, 70, 80, 90, 100]
+      pipsText: [10, 20, 30 , 40, 50, 60, 70, 80, 90, 100]
+      pipsDensity: 10
+        
+        
+      
