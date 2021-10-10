@@ -1,33 +1,43 @@
-Survey
-  .StylesManager
-  .applyTheme("modern");
+import jQuery from "jquery";
+import * as Survey from "survey-jquery";
+import * as widgets from "surveyjs-widgets";
+
+
+// CSS
+import "bootstrap/dist/css/bootstrap.css";
+import "survey-jquery/survey.css";
+import "survey-jquery/modern.css";
+import "nouislider/dist/nouislider.css";
+import "../css/main.css";
+
+// DATA
+import inquerito from "../inquerito/inquerito.yml";
 
 
 jQuery(function ($) {
-  
-  var foo = $.get("inquerito/inquerito.yml");
-  
-  foo.done(function(inquerito) {
-    var json = jsyaml.load(inquerito);
-    window.survey = new Survey.Model(json);
-    survey.locale = 'pt';
-    $("#surveyElement").Survey({model: survey});
-    
-    
-    // On complete
-    
-    survey.onComplete.add(function (sender) {
-        
-        //$.post()
-        document
-          .querySelector('#surveyResult')
-          .textContent = "Result JSON:\n" + JSON.stringify(sender.data, null, 3);
-        
-      });
 
-    survey.showPreviewBeforeComplete = 'showAnsweredQuestions';
-    
+  Survey
+    .StylesManager
+    .applyTheme("modern");
+  widgets.nouislider(Survey);
+  window.survey = new Survey.Model(inquerito);
+  
+  survey.locale = "pt";
+  $("#surveyElement").Survey({model: survey});
+
+
+  // On complete
+
+  survey.onComplete.add(function (sender) {
+
+    //$.post()
+    document
+      .querySelector("#surveyResult")
+      .textContent = "Result JSON:\n" + JSON.stringify(sender.data, null, 3);
+
   });
+
+  survey.showPreviewBeforeComplete = "showAnsweredQuestions";
   
 });
 
