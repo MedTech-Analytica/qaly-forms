@@ -272,12 +272,12 @@ pages:
     questions:
       - type: nouislider
         name: q12_saude_hoje
-        title: Como está a sua saúde hoje?
+        title: 'Como está a sua saúde hoje?'
         description: 'A escala está marcada de 0 a 100, em que 10 signfica o MELHOR estado de saúde que pode imaginar e 0 o PIOR.'
         defaultValue: 50
         rangeMax: 100
         rangeMin: 0
         step: 1
         pipsValues: [10,20,30,40,50,60,70,80,90,100]
-        pipsText: [10,20,30,40,50,60,70,80,90,100]
+        pipsText: ['10','20','30','40','50','60','70','80','90','100']
         pipsDensity: 10

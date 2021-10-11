@@ -2,12 +2,10 @@ import jQuery from "jquery";
 import * as Survey from "survey-jquery";
 import * as widgets from "surveyjs-widgets";
 
-
 // CSS
-import "bootstrap/dist/css/bootstrap.css";
 import "survey-jquery/survey.css";
 import "survey-jquery/modern.css";
-import "nouislider/dist/nouislider.css";
+
 import "../css/main.css";
 
 // DATA
