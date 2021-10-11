@@ -5,7 +5,7 @@ import * as widgets from "surveyjs-widgets";
 // CSS
 import "survey-jquery/survey.css";
 import "survey-jquery/modern.css";
-
+import "surveyjs-widgets/node_modules/nouislider/distribute/nouislider.css"
 import "../css/main.css";
 
 // DATA
